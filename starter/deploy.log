@@ -1,0 +1,45 @@
+
+⚠️ Recommendation: The Starter Toolkit CLI is no longer supported.
+   Please use the AgentCore CLI (@aws/agentcore) to create, develop, and deploy 
+agents on Amazon Bedrock AgentCore.
+   New Bedrock AgentCore features are only accessible in the AgentCore CLI.
+
+   To uninstall this starter toolkit, run: pip uninstall 
+bedrock-agentcore-starter-toolkit
+   To install the AgentCore CLI: npm install -g @aws/agentcore
+   To import existing agents, run: agentcore import
+   Set AGENTCORE_SUPPRESS_RECOMMENDATION=1 to silence this warning.
+
+🚀 Launching Bedrock AgentCore (codebuild mode - RECOMMENDED)...
+   • Build ARM64 containers in the cloud with CodeBuild
+   • No local Docker required (DEFAULT behavior)
+   • Production-ready deployment
+
+💡 Deployment options:
+   • agentcore deploy                → CodeBuild (current)
+   • agentcore deploy --local        → Local development
+   • agentcore deploy --local-build  → Local build + cloud deploy
+
+Using existing memory: CustomerSupportMemory-veKt8fBPdR
+Starting CodeBuild ARM64 deployment for agent 'cm' to account 934668043617 (us-east-1)
+Generated image tag: 20260917-193104-887
+Setting up AWS resources (ECR repository, execution roles)...
+Using ECR repository from config: 934668043617.dkr.ecr.us-east-1.amazonaws.com/bedrock-agentcore-cm
+Using execution role from config: arn:aws:iam::934668043617:role/AmazonBedrockAgentCoreSDKRuntime-us-east-1-b5039c325d
+Preparing CodeBuild project and uploading source...
+Getting or creating CodeBuild execution role for agent: cm
+Role name: AmazonBedrockAgentCoreSDKCodeBuild-us-east-1-b5039c325d
+Reusing existing CodeBuild execution role: arn:aws:iam::934668043617:role/AmazonBedrockAgentCoreSDKCodeBuild-us-east-1-b5039c325d
+Using dockerignore.template with 47 patterns for zip filtering
+Including Dockerfile from /home/haxor44/agents1/cd14763-project-starter/starter/.bedrock_agentcore/cm in source.zip
+Uploaded source to S3: cm/source.zip
+Updated CodeBuild project: bedrock-agentcore-cm-builder
+Starting CodeBuild build (this may take several minutes)...
+Starting CodeBuild monitoring...
+🔄 QUEUED started (total: 0s)
+✅ QUEUED completed in 1.3s
+🔄 PROVISIONING started (total: 2s)
+✅ PROVISIONING completed in 5.3s
+🔄 COMPLETED started (total: 7s)
+❌ Build failed during COMPLETED phase
+❌ CodeBuild failed with status: STOPPED
