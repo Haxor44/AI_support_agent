@@ -6,29 +6,7 @@
 
 ## Overview
 
-In this project you will build a fully functional, production-ready AI customer support agent for a fictional Amazon store. Starting from a simple local chatbot, you will progressively add cloud infrastructure, external tool integration, a knowledge base, persistent memory, a code interpreter, and a browser — finishing with a deployable agent that can handle real customer inquiries end-to-end.
-
-By the end of the project your agent will be able to:
-
-- Answer questions about products, return policies, and loyalty rewards using Retrieval-Augmented Generation (RAG)
-- Look up order status and process refunds by calling Lambda functions through the AgentCore Gateway
-- Remember customer preferences and conversation history across multiple sessions
-- Calculate exact loyalty discounts using a secure code sandbox
-- Navigate websites to fetch live information
-
----
-
-## Learning Objectives
-
-After completing this project you will be able to:
-
-1. Deploy an AI agent to Amazon Bedrock AgentCore
-2. Wire up external Lambda tools via the AgentCore Gateway using the Model Context Protocol (MCP)
-3. Implement RAG with a Bedrock Knowledge Base
-4. Add short-term (session) and long-term (cross-session) memory using AgentCore Memory
-5. Use the AgentCore Code Interpreter for precise computation
-6. Integrate the AgentCore Browser tool for live web access
-7. Monitor and observe agent behaviour with Amazon CloudWatch
+In this is a, production-ready AI customer support agent for a fictional Amazon store. Starting from a simple local chatbot, you will progressively add cloud infrastructure, external tool integration, a knowledge base, persistent memory, a code interpreter, and a browser — finishing with a deployable agent that can handle real customer inquiries end-to-end.
 
 ---
 
@@ -301,17 +279,6 @@ agentcore invoke '{"prompt": "Go to https://www.amazon.com and tell me the page 
 4. Create a **CloudWatch Alarm** that triggers when the error count exceeds 5 in a 5-minute window.
 5. Take a screenshot of the alarm configuration and include it in your submission.
 
----
-
-## Submission Checklist
-
-- [ ] `main.py` with all TODOs completed
-- [ ] Screenshots or terminal output for all 6 test scenarios
-- [ ] Screenshot of the CloudWatch alarm configuration
-- [ ] Brief written reflection (200–400 words) covering:
-  - One design decision you made and why
-  - One challenge you encountered and how you solved it
-  - How you would extend this agent for a production environment
 
 ---
 
